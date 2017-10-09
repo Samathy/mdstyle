@@ -8,6 +8,6 @@ MIT
 
 #### Usage:
 
-markdown document.md | mdstyle | wkhtmltopdf - out.pdf
+    markdown document.md | mdstyle | wkhtmltopdf - out.pdf
 
 
