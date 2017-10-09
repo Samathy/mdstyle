@@ -10,4 +10,8 @@ MIT
 
     markdown document.md | mdstyle | wkhtmltopdf - out.pdf
 
+#### ToDo:
 
+ [] Add command line args to specify: margin, sizes, center etc
+ [] Add command line args to point to style sheet
+ [] Write Markdown parser & integrate
