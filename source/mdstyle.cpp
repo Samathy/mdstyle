@@ -7,7 +7,9 @@
 class css
 {
 
-    private:
+    
+    public:
+
         int side_margin = 20;
         int top_margin = 5;
         std::string title_align = "center";
