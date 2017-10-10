@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
+#include <unistd.h>
 
 
 
@@ -58,11 +59,27 @@ class css
 
 int main(int argc, char ** argv)
 {
+
+    int opt;
+    css style;
+
+    while (( opt = getopt(argc, argv, "m:")) != -1)
+    {
+        switch(opt)
+        {
+            case 'm':
+                style.side_margin = std::stoi(std::string(optarg));
+                break;
+            default:
+                break;
+        }
+    }
+
     std::string input;
     for (std::string line; std::getline(std::cin, line);)
     {     input.append(line); continue;    }
 
-    css style(20, "center", "sans-serif");
+//    css style(20, "center", "sans-serif");
     std::string output;
     output  = style.make_string(input);
 
