@@ -15,7 +15,7 @@ class css
         std::string title_align = "center";
         std::string font_family = "sans-serif";
 
-    public:
+        css(){return;}
 
         css(int side_margin, std::string title_align, std::string font_family)
         {
